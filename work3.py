@@ -6,9 +6,10 @@ def zeros(n):
     if n == 0:
         pass
     else:
-        for i in range(1, int(math.log(n, 5)) + 1):
-            a += n / 5**i
-
+        while n > 0:
+            n //= 5
+            a += n
+    print(a)
     return int(a)
 
 

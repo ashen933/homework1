@@ -3,7 +3,7 @@ def bananas(s, word='banana') -> set:
 
     if word == '':
         result.append(''.rjust(len(s), '-'))
-        return result
+        return set(result)
 
     lefts = ''
     for i in range(len(s)):
